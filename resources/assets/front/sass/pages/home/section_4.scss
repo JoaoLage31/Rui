@@ -1,0 +1,142 @@
+.section_4{
+    margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+
+    &__behind{
+        width: 71vw;
+        position: absolute;
+        height: 80vh;
+        background-color: #F6F4F4;
+        z-index: -1;
+        margin-top: 35vh;
+    }
+    &__input{
+        border: none;
+        margin-bottom: 2.5rem;
+        padding-bottom: 1rem;
+        border-bottom-color: $text;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        background-color: transparent;
+
+        &:focus{
+            outline-width: 0;
+        }
+    }
+
+    .section_4_flex{
+        display: flex;
+        justify-content:center ;
+    }
+
+    &__submit{
+        border: none;
+        background-color: transparent;
+
+        &:focus{
+            outline-width: 0;
+        }
+    }
+
+    &__trace{
+        height: 1px;
+        background-color: $text;
+    }
+    
+    &__title_posisiton{
+        margin-bottom: 8vh;
+    }
+    
+    &__info{
+        width: 60%;
+    }
+    &__info_phone{
+        margin-bottom: 5vh;
+    }
+    &__info_street{
+        margin-bottom: 3vh;
+    }
+}
+
+.mdi{
+    font-size: 1.125rem;
+    margin-right: 0.5rem;
+    color: $text;
+}
+
+.mdi:hover{
+    color: $text;
+}
+
+.contact_me_on{
+    display: none !important;
+}
+@include media-breakpoint-down(md) { 
+    .section_4_flex{
+        justify-content: space-between !important;
+    }
+
+    .section_4__title_posisiton{
+        margin-bottom: 3vh;
+    }
+
+    .section_4__info_phone{
+        margin-bottom: 2vh;
+    }
+    .section_4__info{
+        width: 75%;
+    }
+}
+
+
+@include media-breakpoint-down(xs) { 
+
+    .section_4{
+        display: block;
+        margin-top: 20vh;
+        &__behind{
+            width: 100vw;
+            height: 70vh;
+            margin-top: 60vh;
+        }
+    }    
+    .section_4_flex{
+        display: block !important;
+    }
+
+    .contact_me_on{
+        display: block !important;
+        margin-bottom: 10vh;
+    }
+
+    .contact_me_off{
+        display: none !important;
+    }
+
+    .made{
+        justify-content:  center !important;
+        margin-top: 10vh;
+    }
+
+    .made-it{
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.made{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1000px) and (max-width: 1045px) { 
+
+    @media (min-height: 1300px) and (max-height: 1400px) { 
+        
+        .section_4__behind {
+            height: 55vh;
+        }
+    }
+  }   

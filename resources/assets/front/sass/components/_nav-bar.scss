@@ -1,0 +1,138 @@
+.GoFull{
+    transition: 1s;
+    opacity: 1 !important;
+}
+
+.nav{
+    height: 120vh;
+    max-height: 120vh;
+    min-height: 119vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+
+    &__position{
+        position: relative;
+        padding-top: 4rem;
+        display: flex;
+        justify-content: flex-end;
+
+        &__menu{
+
+            display: flex;
+            justify-content: space-between;
+
+            &__middle{
+                padding-top: 10vh;
+                padding-bottom: 30vh;
+            }
+
+            &__top{
+                position: fixed;
+                z-index: 100;
+            }
+
+            &__bottom{
+                align-items: center;
+                &__line{
+                    width: 100%;
+                    background-color: white;
+                    height: 1px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.mdi-nav{
+    color: white !important;
+}
+
+
+.nav.scrolled .menu__top {
+    color: black !important;
+    transition: background-color 200ms linear;
+  }
+
+  @include media-breakpoint-up(xl) { 
+    .nav__position__menu__middle{
+        width: 75%;
+    }
+  }
+
+  @include media-breakpoint-down(sm) { 
+    .nav{
+
+        height: 105vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__position{
+            &__menu{
+                display:block;
+
+                &__bottom{
+                    &__line{
+                        display: none;
+                    }
+                }
+
+                &__top{
+                    display: flex;
+                    justify-content: unset !important;
+                }
+            }
+        }
+    }
+
+    .mdi__position{
+        display: flex;
+        justify-content: center;
+        margin-top: 15vh;
+    }
+    .nav.scrolled .nav__position{
+        padding-top: 2rem;
+    }
+
+    .nav.scrolled .menu__top {
+        color: black !important;
+        transition: background-color 200ms linear;
+      }
+
+   }
+
+   @include media-breakpoint-down(md) { 
+       .nav{
+           &__position{
+               justify-content: center;
+               &__top{
+                display: flex;
+                justify-content: space-around;
+            }
+           }
+       }
+   }
+
+   @include media-breakpoint-down(lg) { 
+    .nav{
+        &__position{
+            &__menu{
+                justify-content: space-between;
+                &__top{
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}
+
+@media (min-height: 100px) and (max-width:365px) { 
+    .menu__top{
+        font-size: 0.8rem;
+    }
+}
+   
+
