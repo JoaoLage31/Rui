@@ -242,7 +242,7 @@ da Economia Social',
         'title'=>'YOU would like to contact me?',
         'items'=>[[
             'phone'=>'( +351 ) 962 107 023',
-            'street'=>'Rua Conde D. Pedro 179 Rch/dto 4400-091 Vila Nova de Gaia',
+            'street'=>'umemailaqui@gmail.com',
             'images'=>['front/media/img/slider.jpg'],
     ],
 ]]];

@@ -5,7 +5,7 @@
                 <div class="col-xl-12  nav__position">
                     <div class="col-12 col-md-10 col-lg-8 col-xl-6 nav__position__menu">
                         <div class="col-12 col-md-10 col-lg-6 col-xl-9">
-                            <div class="nav__position__menu__top d-flex justify-content-between col-10 col-md-6 col-lg-4 col-xl-4">
+                            <div class="nav__position__menu__top d-flex justify-content-between col-12">
                                 <a data-aos="zoom-in"  data-aos-duration="1000" class="menu__top" href="#sec_1">About</a>
                                 <a data-aos="zoom-in"  data-aos-duration="1500" class="menu__top"  href="#sec_2">Skills</a>
                                 <a  data-aos="zoom-in"  data-aos-duration="2000" class="menu__top" href="#sec_3">Blog</a>
@@ -47,6 +47,10 @@
     @endforeach
 @endforeach
 
+<a id="button"><img class="arrow_top" src="{{URL::asset('front/media/svgs/setatop.svg')}}" alt=""></a>
+
+
+
 @push('scripts')
 <script>
     $(function () {
@@ -62,6 +66,26 @@ $(".menu__top").click(function(e) {
     var aid = $(this).attr("href");
     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
 });
+
+
+
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
 
 </script>
 @endpush

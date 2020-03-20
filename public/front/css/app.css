@@ -10935,7 +10935,6 @@ a.text-dark:focus {
 
 .section_4__info_street {
   font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
   color: #424441;
 }
 
@@ -11275,7 +11274,7 @@ a.text-dark:focus {
 
 @media (max-width: 575.98px) {
   .menu__top {
-    margin-right: 5vw;
+    margin-right: 0vw;
   }
 
   .section_1__title_text {
@@ -11422,6 +11421,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.3;
+  background-attachment: fixed;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 }
 
@@ -11444,7 +11444,6 @@ body {
 }
 
 .nav__position__menu__top {
-  position: fixed;
   z-index: 100;
 }
 
@@ -11459,6 +11458,66 @@ body {
   width: 100%;
   background-color: white;
   height: 1px;
+}
+
+#button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border: none;
+  outline: none;
+  background-color: #ececec;
+  cursor: pointer;
+  border-radius: 100%;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#myBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#button:hover {
+  background-color: #dbdbdb;
+}
+
+.arrow_top {
+  margin-top: 12px;
+}
+
+#button:hover .arrow_top {
+  -webkit-animation: shake 1s infinite;
+  animation: shake 1s infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(0px, -4px);
+  }
+
+  50% {
+    transform: translate(0px, 1px);
+  }
+
+  100% {
+    transform: translate(0px, -4px);
+  }
 }
 
 .mdi-nav {
@@ -11493,7 +11552,7 @@ body {
 
   .nav__position__menu__top {
     display: flex;
-    justify-content: unset !important;
+    justify-content: space-between !important;
   }
 
   .mdi__position {
@@ -11658,8 +11717,12 @@ body {
   /* right: 0; */
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
 .individual_skill {
-  margin-bottom: 8vh;
+  margin-bottom: 6vh;
 }
 
 .mobile-on {
@@ -11782,6 +11845,11 @@ body {
   background-size: cover;
   max-height: 16vw;
   min-height: 16vw;
+}
+
+.button_img {
+  width: 100%;
+  border: none;
 }
 
 .modal-body .img {

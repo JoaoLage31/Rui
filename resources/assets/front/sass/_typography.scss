@@ -207,7 +207,6 @@ color: $text;
 
 .section_4__info_street{
 font-family: $OpenSans;
-text-transform: uppercase;
 color: $text;
 }
 @include media-breakpoint-up(xl) { 
@@ -457,7 +456,7 @@ color: $text;
 //nav Bar
 
 .menu__top{
-  margin-right: 5vw;
+  margin-right: 0vw;
 }
 
 //section_1

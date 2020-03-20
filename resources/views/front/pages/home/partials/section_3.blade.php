@@ -1,5 +1,5 @@
 <div id="sec_3">
-    <div data-aos="fade-left"  data-aos-duration="1000" class="section_3__behind"></div>
+    <div data-aos="fade-right"  data-aos-duration="1000" class="section_3__behind"></div>
     <div class="section_3">
         @foreach($data as $key=>$collection)
             <div data-aos="fade-right"  data-aos-duration="2000" class="section_3__title_posisiton col-xl-3"> <h2 class="section_3__title_buttons"> {{$collection['title']}} </h2></div>
@@ -22,7 +22,9 @@
                     @foreach($collection['items'] as $item)
                             <div class="individual">
                                 @foreach($item["images"] as $img)
+                                <button type="button"  data-toggle="modal" data-target="#exampleModal2" class="slider_01__bottom__add_info2 button_img">
                                     <div class="img" style="background-image: url({{($img)}}); "></div>
+                                </button>
                                 @endforeach
                                 <div class="slider_01__bottom">
                                     @include('front.components.sections_components.section_3-components',[
@@ -112,6 +114,15 @@
 @endforeach
 @push('scripts')
 <script>
+
+var x=0;
+    $('.slider_01__bottom__add_info2').each(function(){
+        x++;
+        var newModal='#modal'+x;
+        $(this).attr('data-target',newModal);
+        $(this).val(x);
+    });
+
 
     var i=0;
     $('.slider_01__bottom__add_info').each(function(){

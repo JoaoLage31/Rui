@@ -1,4 +1,4 @@
-<div data-aos="fade-left"  data-aos-duration="1000" class="section_4__behind"></div>
+<div data-aos="fade-right"  data-aos-duration="1000" class="section_4__behind"></div>
 <div id="sec_4" class="section_4">
     <div class="contact_me_on col-xl-6 d-flex justify-content-end">
         <div class="col-xl-11">
@@ -76,6 +76,6 @@
 <div class="made">
     <div>
         <h6 class="made-it col-12">Copryright 2020 @ Rui Pedro Gonçalves</h6>
-        <h6 class="made-it col-12">Desenvolvido por 4POR4</h6>
+        <h6 class="made-it col-12">Desenvolvido por Sites & Logos</h6>
     </div>
 </div>

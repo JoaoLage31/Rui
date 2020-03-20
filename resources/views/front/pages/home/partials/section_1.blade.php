@@ -14,7 +14,7 @@
                         <!--AQUI EM BAIXO-->
                     </div>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1500" class="section-1__behind"></div>
+                <div data-aos="fade-right" data-aos-duration="1500" class="section-1__behind"></div>
             </div>
         @endforeach
     @endforeach
