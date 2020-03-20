@@ -1,5 +1,7 @@
 .section_2{
     margin-top:50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
     &__behind{
@@ -42,12 +44,15 @@
 
 .none{
     opacity: 0 !important;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     max-height: 0;
     margin-bottom: 0 !important;
 }
 
 .info_container {
     opacity: 1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition:0.5s;
     transition: 0.5s;
 
 }

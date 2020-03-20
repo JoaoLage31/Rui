@@ -1,9 +1,14 @@
 .box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .section_4__submit{
+    margin-left: 16px;
     margin-left: 1rem;
 }
 

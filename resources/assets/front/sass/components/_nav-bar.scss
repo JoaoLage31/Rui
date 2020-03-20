@@ -1,6 +1,8 @@
 .GoFull{
+    -webkit-transition: 1s;
     transition: 1s;
     opacity: 1 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .nav{
@@ -10,17 +12,29 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 
     &__position{
         position: relative;
+        padding-top: 64px;
         padding-top: 4rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
 
         &__menu{
 
+            display: -webkit-box;
+
+            display: -ms-flexbox;
+
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
 
             &__middle{
                 padding-top: 10vh;
@@ -33,7 +47,10 @@
             }
 
             &__bottom{
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                            -ms-grid-row-align: center;
+                        align-items: center;
                 &__line{
                     width: 100%;
                     background-color: white;
@@ -53,6 +70,7 @@
 
 .nav.scrolled .menu__top {
     color: black !important;
+    -webkit-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
   }
 
@@ -80,16 +98,24 @@
                 }
 
                 &__top{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    justify-content: unset !important;
+                    -webkit-box-pack: unset !important;
+                        -ms-flex-pack: unset !important;
+                            justify-content: unset !important;
                 }
             }
         }
     }
 
     .mdi__position{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-top: 15vh;
     }
     .nav.scrolled .nav__position{
@@ -98,6 +124,7 @@
 
     .nav.scrolled .menu__top {
         color: black !important;
+        -webkit-transition: background-color 200ms linear;
         transition: background-color 200ms linear;
       }
 
@@ -106,10 +133,15 @@
    @include media-breakpoint-down(md) { 
        .nav{
            &__position{
-               justify-content: center;
+               -webkit-box-pack: center;
+                   -ms-flex-pack: center;
+                       justify-content: center;
                &__top{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                justify-content: space-around;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
             }
            }
        }
@@ -119,10 +151,15 @@
     .nav{
         &__position{
             &__menu{
-                justify-content: space-between;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
                 &__top{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    justify-content: space-around;
+                    -ms-flex-pack: distribute;
+                        justify-content: space-around;
                 }
             }
         }

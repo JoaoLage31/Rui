@@ -1,7 +1,11 @@
 .section_4{
     margin-top: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     &__behind{
         width: 71vw;
@@ -13,7 +17,9 @@
     }
     &__input{
         border: none;
+        margin-bottom: 40px;
         margin-bottom: 2.5rem;
+        padding-bottom: 16px;
         padding-bottom: 1rem;
         border-bottom-color: $text;
         border-bottom-style: solid;
@@ -26,8 +32,12 @@
     }
 
     .section_4_flex{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content:center ;
+        -webkit-box-pack:center ;
+            -ms-flex-pack:center ;
+                justify-content:center ;
     }
 
     &__submit{
@@ -60,7 +70,9 @@
 }
 
 .mdi{
+    font-size: 18px;
     font-size: 1.125rem;
+    margin-right: 8px;
     margin-right: 0.5rem;
     color: $text;
 }
@@ -74,7 +86,9 @@
 }
 @include media-breakpoint-down(md) { 
     .section_4_flex{
-        justify-content: space-between !important;
+        -webkit-box-pack: justify !important;
+            -ms-flex-pack: justify !important;
+                justify-content: space-between !important;
     }
 
     .section_4__title_posisiton{
@@ -115,20 +129,28 @@
     }
 
     .made{
-        justify-content:  center !important;
+        -webkit-box-pack:  center !important;
+            -ms-flex-pack:  center !important;
+                justify-content:  center !important;
         margin-top: 10vh;
     }
 
     .made-it{
         text-align: center;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
 .made{
     margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 @media (min-width: 1000px) and (max-width: 1045px) { 
