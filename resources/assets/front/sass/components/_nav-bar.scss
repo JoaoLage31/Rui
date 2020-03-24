@@ -154,6 +154,10 @@
                     }
                 }
 
+                &__middle{
+                    padding-bottom: 15vh;
+                }
+
                 &__top{
                     display: -webkit-box;
                     display: -ms-flexbox;
@@ -161,19 +165,31 @@
                     -webkit-box-pack: space-between !important;
                         -ms-flex-pack: space-between !important;
                             justify-content: space-between !important;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
                 }
             }
         }
     }
 
+    .menu__top{
+        margin-right: 1rem;
+    }
+
+
+
     .mdi__position{
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
         margin-top: 15vh;
+
+        &__inside{
+            display: flex;
+        }
     }
     .nav.scrolled .nav__position{
         padding-top: 2rem;

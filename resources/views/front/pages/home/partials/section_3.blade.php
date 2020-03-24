@@ -43,6 +43,11 @@
             @endforeach
         </div>
     </div>
+
+    <div class="col-12 d-flex justify-content-center vermais">
+      <a class="vermais__button" href="articles">VER MAIS</a>
+    </div>
+    
 </div>
 
 @foreach($data as $key=>$collection)
@@ -112,6 +117,7 @@
     </div>
   @endforeach
 @endforeach
+
 @push('scripts')
 <script>
 

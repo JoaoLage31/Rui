@@ -186,7 +186,7 @@ da Economia Social',
             'paragraph_3'=> 'Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.',
     ],
     [
-            'title'=>'SGOOOOOOOOOO',
+            'title'=>'A news report Something',
             'date'=>'25/10/11',
             'images'=>['front/media/img/slider3.jpg'],
             'add_info'=>'See More',
@@ -236,19 +236,8 @@ da Economia Social',
 
 
 
-@php
-    $result = ['0'=>
-        [
-        'title'=>'YOU would like to contact me?',
-        'items'=>[[
-            'phone'=>'( +351 ) 962 107 023',
-            'street'=>'umemailaqui@gmail.com',
-            'images'=>['front/media/img/slider.jpg'],
-    ],
-]]];
-@endphp
 
-@include('front.pages.home.partials.section_4',['data'=>$result])
+@include('front.pages.home.partials.section_4')
 
 @endsection
 

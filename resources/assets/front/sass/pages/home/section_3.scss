@@ -10,6 +10,10 @@
     }
 }
 
+.secslider{
+    margin-top: 6rem;
+}
+
 .button_img{
     width: 100% ;
     border: none;
@@ -171,6 +175,20 @@
     margin-left: -102vw;
     height: 1px;
     background-color: $text;
+}
+
+.vermais{
+    margin-top: 6.5rem;
+
+    &__button{
+        color: $text;
+    }
+    &__button:hover{
+        color: $text;
+    }
+    a{
+        text-decoration: none;
+    }
 }
 
 @include media-breakpoint-down(xl) {

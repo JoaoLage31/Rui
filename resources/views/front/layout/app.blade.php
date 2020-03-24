@@ -15,7 +15,7 @@
 
 <body>
 
-    @php
+@php
     $result = ['0'=>
         [
         'items'=>[[
@@ -24,7 +24,7 @@
             'images'=>['front/media/img/banner.jpg']
     ]
     ]]];
-    @endphp
+@endphp
 
     <!-- Begin: Header -->
     @include('front.layout.nav-bar',['data'=>$result])
@@ -42,6 +42,7 @@
 
     <script src="{{ mix('/front/js/app.js') }}"></script>
     @stack('scripts')
+    
 </body>
 
 </html>

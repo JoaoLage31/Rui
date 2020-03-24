@@ -4,12 +4,13 @@
             <nav  class="nav" style="background-image: url({{($img)}}); ">
                 <div class="col-xl-12  nav__position">
                     <div class="col-12 col-md-10 col-lg-8 col-xl-6 nav__position__menu">
-                        <div class="col-12 col-md-10 col-lg-6 col-xl-9">
+                        <div class="col-12 col-md-10 col-lg-10 col-xl-9">
                             <div class="nav__position__menu__top d-flex justify-content-between col-12">
-                                <a data-aos="zoom-in"  data-aos-duration="1000" class="menu__top" href="#sec_1">About</a>
-                                <a data-aos="zoom-in"  data-aos-duration="1500" class="menu__top"  href="#sec_2">Skills</a>
-                                <a  data-aos="zoom-in"  data-aos-duration="2000" class="menu__top" href="#sec_3">Blog</a>
-                                <a  data-aos="zoom-in"  data-aos-duration="2500" class="menu__top" href="#sec_4">Contacts</a>
+                                <a data-aos="zoom-in"  data-aos-duration="1000" class="menu__top" href="Home">Home</a>
+                                <a data-aos="zoom-in"  data-aos-duration="1000" class="menu__top ancora" href="#sec_1">About</a>
+                                <a data-aos="zoom-in"  data-aos-duration="1500" class="menu__top ancora"  href="#sec_2">Skills</a>
+                                <a  data-aos="zoom-in"  data-aos-duration="2000" class="menu__top ancora" href="#sec_3">Blog</a>
+                                <a  data-aos="zoom-in"  data-aos-duration="2500" class="menu__top ancora" href="#sec_4">Contacts</a>
                             </div>
 
                         @include('front.components.nav-components',[
@@ -25,19 +26,22 @@
                                 </div>
                         </div>
                         </div>
-                        <div class="mdi__position">
-                            <div >
-                                <a href="#" class="mdi mdi-facebook mdi-nav"></a>
+                        <div class="mdi__position col-12">
+                            <div class="col-12 mdi__position__inside">
+                                <div >
+                                    <a href="#" class="mdi mdi-facebook mdi-nav"></a>
+                                </div>
+                                <div >
+                                    <a href="#" class="mdi mdi-twitter mdi-nav"></a>
+                                </div>
+                                <div >
+                                    <a href="#" class="mdi mdi-linkedin mdi-nav"></a>
+                                </div>
+                                <div >
+                                    <a href="#" class="mdi mdi-instagram mdi-nav"></a>
+                                </div>
                             </div>
-                            <div >
-                                <a href="#" class="mdi mdi-twitter mdi-nav"></a>
-                            </div>
-                            <div >
-                                <a href="#" class="mdi mdi-linkedin mdi-nav"></a>
-                            </div>
-                            <div >
-                                <a href="#" class="mdi mdi-instagram mdi-nav"></a>
-                            </div>
+                            
                         </div>
                     </div>
                     
@@ -61,7 +65,7 @@
   });
 });
 
-$(".menu__top").click(function(e) {
+$(".ancora").click(function(e) {
     e.preventDefault();
     var aid = $(this).attr("href");
     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
@@ -85,6 +89,13 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
 
 
 </script>
