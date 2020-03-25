@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xl-6 col-12 d-flex justify-content-around">
-                  <div class="col-xl-10 col-12">
+                  <div class="paragraph">
                       @include('front.components.sections_components.section_3-components',[
                       'paragraph_1'=>$item['paragraph_1'],
                       'paragraph_2'=>$item['paragraph_2'],

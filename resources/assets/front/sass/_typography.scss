@@ -366,7 +366,7 @@ color: $text;
 
 .slider_01__bottom__title{
   font-size: 1.7rem ;
-  @include limite-text(2rem, 2);
+  @include limite-text2(2rem, 2);
 }
 
 .slider_01__bottom__date{
@@ -458,6 +458,10 @@ color: $text;
 
 .menu__top{
   margin-right: 0vw;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  @include limite-text(2.5rem, 1);
 }
 
 //section_1

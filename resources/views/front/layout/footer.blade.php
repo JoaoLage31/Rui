@@ -21,15 +21,15 @@
         </div>
     </div>
     <div class="col-xl-10 section_4_flex">
-        <div class="col-md-6 col-xl-6">
-            <input  class="section_4__input col-xl-11" type="text" placeholder="NAME*">
-            <input  class="section_4__input col-xl-11" type="text" placeholder="EMAIL*">
-            <input  class="section_4__input col-xl-11" type="text" placeholder="PHONE">
-            <input  class="section_4__input col-xl-11" type="text" placeholder="SUBJECT*">
-            <input   class="section_4__input col-xl-11" type="text" placeholder="MESSAGE*">
+        <div class="col-md-6 col-xl-5">
+            <input  class="section_4__input col-xl-12" type="text" placeholder="NAME*">
+            <input  class="section_4__input col-xl-12" type="text" placeholder="EMAIL*">
+            <input  class="section_4__input col-xl-12" type="text" placeholder="PHONE">
+            <input  class="section_4__input col-xl-12" type="text" placeholder="SUBJECT*">
+            <input   class="section_4__input col-xl-12" type="text" placeholder="MESSAGE*">
             <div class="d-flex align-items-center justify-content-end">
                 <div class="section_4__trace col-1 col-md-1 col-lg-1 col-xl-1"></div>
-                <input class="section_4__submit col-4 col-md-3 col-lg-3 col-xl-3" type="submit" value="Submit">
+                <input class="section_4__submit " type="submit" value="Submit">
             </div>
             
         </div>

@@ -23,7 +23,8 @@
                             <div class="individual">
                                 @foreach($item["images"] as $img)
                                 <button type="button"  data-toggle="modal" data-target="#exampleModal2" class="slider_01__bottom__add_info2 button_img">
-                                    <div class="img" style="background-image: url({{($img)}}); "></div>
+                                    
+                                  <div class="img" style="background-image: url({{($img)}}); "></div>
                                 </button>
                                 @endforeach
                                 <div class="slider_01__bottom">
@@ -45,7 +46,7 @@
     </div>
 
     <div class="col-12 d-flex justify-content-center vermais">
-      <a class="vermais__button" href="articles">VER MAIS</a>
+      <a class="vermais__button" href="articles">VER TODAS</a>
     </div>
     
 </div>
@@ -101,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xl-6 col-12 d-flex justify-content-around">
-                  <div class="col-xl-10 col-12">
+                  <div class="paragraph">
                       @include('front.components.sections_components.section_3-components',[
                       'paragraph_1'=>$item['paragraph_1'],
                       'paragraph_2'=>$item['paragraph_2'],

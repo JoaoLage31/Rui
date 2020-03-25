@@ -11164,6 +11164,7 @@ a.text-dark:focus {
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
     line-height: 2rem;
+    min-height: 4rem;
     max-height: 4rem;
   }
 
@@ -11275,6 +11276,14 @@ a.text-dark:focus {
 @media (max-width: 575.98px) {
   .menu__top {
     margin-right: 0vw;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    line-height: 2.5rem;
+    max-height: 2.5rem;
   }
 
   .section_1__title_text {
@@ -11414,6 +11423,14 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
+.overlay {
+  display: none;
+}
+
+.opennav {
+  display: none;
+}
+
 .nav {
   height: 120vh;
   max-height: 120vh;
@@ -11542,6 +11559,10 @@ body {
     background-size: cover;
   }
 
+  .nav__position {
+    padding-top: 2rem;
+  }
+
   .nav__position__menu {
     display: block;
   }
@@ -11555,15 +11576,7 @@ body {
   }
 
   .nav__position__menu__top {
-    display: flex;
-    justify-content: space-between !important;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .menu__top {
-    margin-right: 1rem;
+    display: none !important;
   }
 
   .mdi__position {
@@ -11583,6 +11596,67 @@ body {
   .nav.scrolled .menu__top {
     color: black !important;
     transition: background-color 200ms linear;
+  }
+
+  .overlay {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    color: white;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .opennav {
+    color: white;
+    font-size: 1.8rem;
+    display: block;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 30px;
+    left: 65px;
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
@@ -11862,6 +11936,30 @@ body {
   min-height: 16vw;
 }
 
+@-webkit-keyframes shake2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(0px, -6px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.vermais__button:hover {
+  -webkit-animation: shake2 1s infinite;
+  animation: shake2 1s infinite;
+}
+
+.paragraph {
+  width: 85%;
+  margin: auto;
+}
+
 .secslider {
   margin-top: 6rem;
 }
@@ -12067,6 +12165,20 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  .paragraph {
+    width: 100%;
+    margin: auto;
+  }
+
+  .modal-body .partilhar__buttons {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .line {
+    display: none;
+  }
+
   .modal-header {
     position: unset;
     top: 0;
@@ -12138,6 +12250,16 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .paragraph {
+    width: 100%;
+    margin: auto;
+  }
+
+  .modal-body .partilhar__buttons {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
   .line {
     display: none;
   }
@@ -12196,6 +12318,10 @@ body {
   .modal-content {
     padding: 0rem;
     display: block;
+  }
+
+  .modal-body {
+    margin-top: 30px;
   }
 
   .modal-body .img {
@@ -12380,7 +12506,7 @@ body {
 }
 
 .made {
-  margin-top: 5vh;
+  margin-top: 2vh;
   display: flex;
   justify-content: flex-end;
 }

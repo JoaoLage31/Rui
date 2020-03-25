@@ -12,6 +12,18 @@
                                 <a  data-aos="zoom-in"  data-aos-duration="2000" class="menu__top ancora" href="#sec_3">Blog</a>
                                 <a  data-aos="zoom-in"  data-aos-duration="2500" class="menu__top ancora" href="#sec_4">Contacts</a>
                             </div>
+                            <span class="col-3 opennav"  onclick="openNav()">&#9776;</span>
+
+                            <div id="myNav" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <a data-aos="zoom-in"  data-aos-duration="1000" class="menu__top" href="Home">Home</a>
+                                    <a data-aos="zoom-in"  data-aos-duration="1000" class="menu__top ancora" href="#sec_1">About</a>
+                                    <a data-aos="zoom-in"  data-aos-duration="1500" class="menu__top ancora"  href="#sec_2">Skills</a>
+                                    <a  data-aos="zoom-in"  data-aos-duration="2000" class="menu__top ancora" href="#sec_3">Blog</a>
+                                    <a  data-aos="zoom-in"  data-aos-duration="2500" class="menu__top ancora" href="#sec_4">Contacts</a>
+                                </div>
+                              </div>
 
                         @include('front.components.nav-components',[
                             'title'=>$item['title'],
@@ -69,6 +81,7 @@ $(".ancora").click(function(e) {
     e.preventDefault();
     var aid = $(this).attr("href");
     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+    document.getElementById("myNav").style.width = "0%";
 });
 
 
@@ -90,12 +103,12 @@ btn.on('click', function(e) {
 });
 
 function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-    
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
 
 
 </script>

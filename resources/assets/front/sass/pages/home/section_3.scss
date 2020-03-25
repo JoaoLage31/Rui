@@ -10,6 +10,23 @@
     }
 }
 
+@-webkit-keyframes shake2 {
+    0% { -webkit-transform: translate(0px, 1px); transform: translate(0px, 0px ,) ; }
+    50% { -webkit-transform: translate(-8px, 1px); transform: translate(0px, -6px);  }
+    100% { -webkit-transform: translate(0px, 1px); transform: translate(0px, 0px);  }
+  }
+
+
+.vermais__button:hover{
+    -webkit-animation: shake2 1s infinite;
+            animation: shake2 1s infinite;
+}
+
+.paragraph{
+    width: 85%;
+    margin: auto;
+}
+
 .secslider{
     margin-top: 6rem;
 }
@@ -244,6 +261,24 @@
 
 @include media-breakpoint-down(md) {
 
+    .paragraph{
+        width: 100%;
+        margin: auto;
+    }
+
+    .modal-body{
+        .partilhar__buttons{
+            margin-left: 0;
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+
+    .line{
+        display: none;
+    }
+    
+
     .modal-header{
         position: unset;
         top: 0;
@@ -316,6 +351,20 @@
 
 
 @include media-breakpoint-down(xs) { 
+
+    .paragraph{
+        width: 100%;
+        margin: auto;
+    }
+
+    .modal-body{
+        .partilhar__buttons{
+            margin-left: 0;
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+
     .line{
         display: none;
     }
@@ -375,6 +424,9 @@
     }
 
     .modal-body{
+
+        margin-top: 30px;
+        
         .img{
             background-repeat: no-repeat;
             background-size: cover;
