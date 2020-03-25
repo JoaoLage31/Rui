@@ -279,8 +279,10 @@
    @include media-breakpoint-down(md) { 
        .nav{
 
+        background-repeat: no-repeat;
+        background-size: cover;
         background-attachment: scroll;
-        
+
            &__position{
                -webkit-box-pack: center;
                    -ms-flex-pack: center;
@@ -298,6 +300,9 @@
 
    @include media-breakpoint-down(lg) { 
     .nav{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
         &__position{
             &__menu{
                 -webkit-box-pack: justify;
