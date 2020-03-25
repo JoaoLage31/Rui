@@ -17,10 +17,22 @@
   }
 
 
-.vermais__button:hover{
-    -webkit-animation: shake2 1s infinite;
-            animation: shake2 1s infinite;
+.vermais{
+
+    &__button:hover{
+        -webkit-animation: shake2 1s infinite;
+        animation: shake2 1s infinite;
+        color: white;
+        background-color: rgba(146, 146, 146, 0.805);
+        color: white;
+    }
+
+    a:hover{
+        color: white;
+    }
 }
+
+
 
 .paragraph{
     width: 85%;
@@ -205,6 +217,9 @@
     }
     a{
         text-decoration: none;
+        background-color: rgba(146, 146, 146, 0.705);
+    padding: 1rem;
+    color: white;
     }
 }
 

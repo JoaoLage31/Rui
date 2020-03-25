@@ -11445,6 +11445,7 @@ body {
 .nav__position {
   position: relative;
   padding-top: 64px;
+  padding-top: 64px;
   padding-top: 4rem;
   display: flex;
   justify-content: flex-end;
@@ -11488,6 +11489,7 @@ body {
   right: 30px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   visibility: hidden;
   z-index: 1000;
   border: none;
@@ -11502,11 +11504,13 @@ body {
 
 #button.show {
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   visibility: visible;
 }
 
 #myBtn.show {
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   visibility: visible;
 }
 
@@ -11557,9 +11561,11 @@ body {
     height: 105vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
   }
 
   .nav__position {
+    padding-top: 32px;
     padding-top: 2rem;
   }
 
@@ -11607,7 +11613,7 @@ body {
     top: 0;
     left: 0;
     background-color: black;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.75);
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -11626,6 +11632,7 @@ body {
     display: block;
     transition: 0.3s;
     color: white;
+    opacity: 1 !important;
   }
 
   .overlay a:hover,
@@ -11953,6 +11960,13 @@ body {
 .vermais__button:hover {
   -webkit-animation: shake2 1s infinite;
   animation: shake2 1s infinite;
+  color: white;
+  background-color: rgba(146, 146, 146, 0.805);
+  color: white;
+}
+
+.vermais a:hover {
+  color: white;
 }
 
 .paragraph {
@@ -12119,6 +12133,9 @@ body {
 
 .vermais a {
   text-decoration: none;
+  background-color: rgba(146, 146, 146, 0.705);
+  padding: 1rem;
+  color: white;
 }
 
 .modal-body {
