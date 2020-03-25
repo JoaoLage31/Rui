@@ -278,6 +278,9 @@
 
    @include media-breakpoint-down(md) { 
        .nav{
+
+        background-attachment: scroll;
+        
            &__position{
                -webkit-box-pack: center;
                    -ms-flex-pack: center;
