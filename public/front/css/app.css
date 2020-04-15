@@ -11550,12 +11550,6 @@ body {
   transition: background-color 200ms linear;
 }
 
-@media (min-width: 1200px) {
-  .nav__position__menu__middle {
-    width: 75%;
-  }
-}
-
 @media (max-width: 767.98px) {
   .nav {
     height: 105vh;

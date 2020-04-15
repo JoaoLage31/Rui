@@ -147,11 +147,6 @@
     transition: background-color 200ms linear;
   }
 
-  @include media-breakpoint-up(xl) { 
-    .nav__position__menu__middle{
-        width: 75%;
-    }
-  }
 
   @include media-breakpoint-down(sm) { 
     .nav{
